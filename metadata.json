@@ -1,0 +1,6 @@
+{
+  "name": "EcoPack AI",
+  "description": "AI-Based Intelligent Food Packaging Material Recommendation System optimizing shelf life, barrier kinetics, and environmental impact for food suppliers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
