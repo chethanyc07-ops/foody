@@ -1,29 +1,23 @@
 # EcoPack AI - Food Packaging Material Recommendation System
 
-An AI-based intelligent food packaging material recommendation system and supplier analytical platform designed to maximize food shelf life while minimizing environmental impact.
+An AI-driven intelligent food packaging material recommendation system and supplier analytical platform designed to maximize food shelf life while minimizing environmental impact.
 
 ---
 
-## 🌐 Web Version (Ready for Vercel Deployment)
+## 🌐 Web Version (Vercel Ready)
 
-The web version is built with **Next.js 15**, **React 19**, **Tailwind CSS**, and the **Gemini API**.
+The web application is located at the root of this repository and is pre-configured for **1-click Vercel deployment**.
 
-### How to Deploy on Vercel:
+### Deploy to Vercel:
+1. Push this repository to **GitHub**.
+2. Go to [vercel.com/new](https://vercel.com/new) and select this repository.
+3. Vercel will automatically detect **Next.js** from `package.json`.
+4. In **Environment Variables**, add:
+   - `NEXT_PUBLIC_GEMINI_API_KEY`: *(Your Google AI Studio Gemini API Key)*
+5. Click **Deploy**. Vercel will build and host your live website.
 
-1. **Push to GitHub**:
-   - Push this repository to your GitHub account.
-
-2. **Deploy on Vercel**:
-   - Go to [vercel.com/new](https://vercel.com/new) and select this repository.
-   - **Framework Preset**: `Next.js`
-   - **Root Directory**: `web` (or leave default root with `vercel.json` configured)
-   - **Environment Variables**:
-     - `NEXT_PUBLIC_GEMINI_API_KEY`: *(Your Google AI Studio Gemini API Key)*
-   - Click **Deploy**!
-
-### Run Web Version Locally:
+### Run Locally:
 ```bash
-cd web
 npm install
 npm run dev
 ```
@@ -33,8 +27,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## 📱 Android Version (Kotlin & Jetpack Compose)
 
-The native Android app is in the `app/` directory and can be compiled using Android Studio or Gradle:
+The native Android app lives in the `app/` module and can be compiled using Android Studio:
 ```bash
 gradle :app:assembleDebug
 ```
-The APK is generated at `app/build/outputs/apk/debug/app-debug.apk`.
+The debug APK is generated at `app/build/outputs/apk/debug/app-debug.apk`.
